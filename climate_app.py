@@ -12,7 +12,7 @@ import datetime as dt
 #################################################
 # Database Setup
 #################################################
-engine = create_engine("sqlite:///Resources/hawaii.sqlite", connect_args={'check_same_thread': False}, echo=True)
+engine = create_engine("sqlite:///Resources/hawaii.sqlite", connect_args={'check_same_thread': False})
 # reflect an existing database into a new model
 Base = automap_base()
 # reflect the tables
